@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: solid red 5px;
+           height: 100vh; 
+           backgroundi-color: aqua;
+        }
+        .box{
+            border: solid yellow 5px;
+            border-radius: 10px;
+            height: 50px;
+            width: 200px;
+            background-color: blueviolet;
+            margin: 10px;
+            color: yellow;
+            position: relative;
+            animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+
+        }
+        @keyframes rightmovement {
+        from{
+            top: 0;
+            left: 0;
+    }
+    to{
+        top: 0;
+        left: 1200px;
+    }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>my name is chandan kumar</h1>
+        </div>
+    </div>
+</body>
+</html>

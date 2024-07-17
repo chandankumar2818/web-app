@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second card</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            min-height: 900px;
+            /* border: solid 1px; */
+            background-color: #00DBDE;
+            background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .secondcard {
+            width: 500px;
+            height: 700px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            gap: 30px;
+            /* padding: 20px; */
+            box-shadow: 20px 20px 50px 1px rgb(223, 205, 239);
+
+        }
+
+        .secondcard img {
+            height: 250px;
+            width: 500px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .secondcard h3 {
+            text-align: center;
+
+        }
+
+        .secondcard p {
+            /* padding: 20px; */
+            width: 70%;
+        }
+
+        .smallbox {
+            width: 400px;
+            height: 50px;
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+
+        }
+
+        button {
+            height: 50px;
+            width: 400px;
+            background-color: #090979;
+            color: white;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.19), 0 6px 60px rgba(0, 0, 0, 0.23);
+        }
+
+        .cancelbox a {
+            text-decoration: none;
+            color: rgb(78, 73, 73);
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .leftbox {
+            display: flex;
+            /* flex-direction: row; */
+            /* justify-content: start; */
+            /* align-items: start; */
+            width: fit-content;
+        }
+
+        .rightbox {
+            display: flex;
+
+
+        }
+
+        .Amountbox {
+            width: 80%;
+            height: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            /* background-color: whitesmoke; */
+            padding-left: 20px;
+        }
+
+        .leftbox img {
+            /* width: fit-content; */
+            width: 50px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="secondcard">
+            <img src="forest.webp">
+            <h3>Order Summary</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quod unde ut cupiditate iste id magni eaque
+                rem animi suscipit?</p>
+            <div class="smallbox">
+                <div class="leftbox">
+                    <div class="imgbox">
+
+                        <img src="music.jpeg">
+                    </div>
+
+                    <div class="Amountbox">
+                        <p>Annual </p>
+                        <p>$9.99/year</p>
+                    </div>
+
+                </div>
+                <div class="rightbox">
+                    <a href="#">cancel</a>
+                </div>
+            </div>
+            <button>
+                Proceed to Payment
+            </button>
+            <div class="cancelbox">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

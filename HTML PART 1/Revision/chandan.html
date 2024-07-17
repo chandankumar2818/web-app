@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guess the Number</title>
+<!-- <link rel="stylesheet" href="style.css"> -->
+ <style>
+    /* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+ </style>
+</head>
+<body>
+<h1>Guess the Number</h1>
+<p>Enter a number between 1 and 100:</p>
+<input type="text" id="guessInput">
+<button onclick="checkGuess()">Submit Guess</button>
+<p id="message"></p>
+<script src="script.js"></script>
+<script>
+    // script.js
+const secretNumber = Math.floor(Math.random() * 100) + 1;
+let attempts = 0;
+
+function checkGuess() {
+    const guess = parseInt(document.getElementById('guessInput').value);
+    attempts++;
+    
+    if (guess === secretNumber) {
+        setMessage(`Congratulations! You guessed the number in ${attempts} attempts.`);
+    } else if (guess < secretNumber) {
+        setMessage('Too low. Try again.');
+    } else {
+        setMessage('Too high. Try again.');
+    }
+}
+
+function setMessage(message) {
+    document.getElementById('message').textContent = message;
+}
+
+</script>
+</body>
+</html>

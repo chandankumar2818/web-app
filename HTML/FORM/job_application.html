@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <h2>Job Application</h2>
+        <div>
+           Name : <input type="name" name="Myname">
+        </div>
+        <br>
+        <div>
+         Email :   <input type="email" name="email id" >
+        </div>
+        <br>
+        <div>
+       Enter your mobile number : <input type="tel" name="mobile" placeholder="1234-457-890" pattern="[1234]{4}-[567]{3}-[890]{3}">
+        </div>
+        <br>
+        <div>
+         Resume : <br>
+          <input type="file" name="file">
+        </div>
+        <br>
+        <div>
+          Experience (years) :  <br> <input type="number" name="number" min="0" max="50" >
+        </div>
+        <br>
+        <fieldset>
+            <legend>Skills</legend>
+          HTML :  <input type="checkbox" name="checkbox" >
+          CSS  : <input type="checkbox" name="checkbox" >
+         JAVA SCRIPT : <input type="checkbox" name="checkbox">
+        </fieldset>
+        <br>
+      
+       Higher Education : <select name="education type" >
+            <!-- <label for="Higher education"></label> -->
+            <option value="matric">Matric</option>
+            <option value="enter">Enter</option>
+            <option value="bachelor of technology">Bachelor of technology</option>
+            <option value="master of technology">Master of technology</option>
+        </select>
+        <br>
+        <br>  
+        <div>
+        Avalability : <br> Full Time : <input type="radio" name="avalaibility" >
+        Part Time : <input type="radio" name="avalaibility" > 
+    </div>
+    <br>
+    <div>
+       Additional (Comments) : <br> <textarea name="name" cols="30" rows="10" placeholder="Enter text here : " ></textarea>
+    </div>
+    <br>
+    <input type="submit" name="Submit Application" >
+    </form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    height: 900px;
+    width: 1550px;
+    /* linear-gradient:(red 0%, orange 10%, orange 30%, yellow 50%, yellow 70%, green 90%, green 100%); */
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.onecard{
+    height: 500px;
+    width: 700px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.leftbox{
+    height: 500px;
+    /* height: fit-content; */
+    width: 350px;
+    /* border-radius: 10px; */
+    background-color: rgb(121, 14, 221);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.rightbox{
+    
+}
+img{
+    height: 500px;
+    width: 350px;
+    /* border-radius: 10px; */
+}
+.smallbox{
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    /* background-color: blueviolet; */
+    column-gap: 0px;
+    
+    
+}
+.leftbox h1{
+   padding: 20px;
+   color: white;
+}
+.leftbox p{
+    padding: 20px;
+   color: white;
+}

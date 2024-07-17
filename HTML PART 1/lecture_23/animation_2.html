@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: solid brown 5px;
+            background-color: bisque;
+            height: 1500px;
+            width: 100%;
+        }
+        .box{
+            border: solid red 5px;
+            height: 200px;
+            width: 300px;
+            position: relative;
+            /* animation-name: rightmove;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in; */
+            animation: 5s ease 1s infinite alternate none running rightmove;
+        }
+        .box1{
+            border: solid brown 3px;
+            height: 200px;
+            width: 300px;
+            position: relative;
+            /* animation-name: leftmove;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out; */
+            animation: 5s ease-in-out 1s infinite alternate none running leftmove;
+        }
+        @keyframes rightmove {
+            from{
+                top: 0;
+                left: 0;
+                background-color: aqua;
+            }
+            to{
+                top: 0;
+                left: 1350px;
+                background-color: blue;
+            }
+        }
+        @keyframes leftmove {
+            from{
+            top: 500px;           
+            left: 1350px;
+            background-color: cadetblue;
+            }
+            to{
+                top:500px;
+                left: 0; 
+                background-color: coral;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container "> 
+        <div class="box">
+
+        </div>
+        <div class="box1">
+
+        </div>
+    </div>
+</body>
+</html>

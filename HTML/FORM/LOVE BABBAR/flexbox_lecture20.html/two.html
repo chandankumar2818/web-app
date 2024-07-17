@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px; 
+        }
+        .container{
+            background-color: aqua;
+            border: double black 50px;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction:row;
+            /* flex-wrap: wrap; */
+            justify-content:start;
+            height: 900px;
+            align-items:start;
+            align-content:center;
+          
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: solid red 2px;
+            margin: 0px;
+            padding: 0px;
+            /* overflow: scroll; */
+        }
+        #box1{
+            background-color: red;
+            border: dotted black 5px;
+            border-radius: 20px;
+            /* overflow: scroll; */
+            /* flex-shrink: 5; */
+            flex-grow: 2;
+        }
+        #box2{
+            background-color: brown;
+            border: dotted black 5px;
+            border-radius: 20px;
+            /* overflow: scroll; */
+            /* flex-shrink: 5; */
+            flex-grow: 2;
+            flex-basis: 50px;
+        }
+        #box3{
+            background-color: blueviolet;
+            border: dotted black 5px;
+            border-radius: 20px;
+            /* overflow: scroll; */
+            /* flex-shrink: 5; */
+            flex-grow: 2;
+        }
+        #box4{
+            background-color: black;
+            border: dotted red 5px;
+            border-radius: 20px;
+            text-align: center;
+            color: RED;
+            /* overflow: scroll; */
+            /* flex-shrink: 50; */
+            flex-grow: 5;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"><h1>CHANDAN</h1></div>
+        <div class="box" id="box2"><H1>AMAN</H1></div>
+        <div class="box" id="box3"><H1>RAHUL</H1></div>
+        <div class="box" id="box4"><H1>ABHISHEK</H1></div>
+</div>
+</body>
+</html>

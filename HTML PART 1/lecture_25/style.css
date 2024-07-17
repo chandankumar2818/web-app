@@ -1,0 +1,25 @@
+.container{
+    border: solid red 3px;
+    height: 1000px;
+    width: 900px;
+    padding: 10px;
+    margin: 10px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    border: solid red 3px;
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    background-color: aquamarine;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+/* div.box{
+    transform: rotate(45deg);
+} */
